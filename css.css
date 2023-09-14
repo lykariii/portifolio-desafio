@@ -66,6 +66,7 @@ h2{
     height: 60px;
     border: none;
     background: none;
+    transition: all 0.2s ease-in-out;
   }
 
   button .like{
