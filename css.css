@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #002e46;
+    color: #ffffff;
+    user-select: none;
+  }
+  
+h2{
+    text-align: center;
+}
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  }
+  
+  .card {
+    user-select: none;
+    max-width: 400px;
+    margin: 5rem auto;
+    border: 1px solid #ffffff22;
+    background-color: #438c9e;
+    background: linear-gradient(0deg, #004f77 0%, rgba(17, 0, 32, 0.5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden;
+    transition: 0.5s all;
+  }
+  
+  .card .meio {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 1rem;
+    padding-left: 20px;
+  }
+
+  .coracao{
+    user-select: none;
+    max-width: 60px;
+    margin: auto;
+    border: 1px solid #ffffff22;
+    background-color: #438c9e;
+    background: linear-gradient(0deg, #004f77 0%, rgba(17, 0, 32, 0.5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden;
+    transition: 0.5s all;
+  }
+
+  .coracao:hover {
+    border: 1px solid #ffffff44;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+    cursor: pointer;
+  }
+
+  button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: none;
+  }
+
+  button .like{
+    width: 30px;
+    filter: invert(100%);
+  }
+
+  .card .meio .imagem {
+    border-radius: 0.5rem;
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .card .meio .description {
+    margin: 0.5rem 0;
+    color: #ccfffc;
+  }
+
+  .card ::before {
+    position: fixed;
+    content: "";
+    box-shadow: 0 0 100px 40px #ffffff08;
+    top: -10%;
+    left: -100%;
+    transform: rotate(-45deg);
+    height: 60rem;
+    transition: 0.7s all;
+  }
+  .card:hover {
+    border: 1px solid #ffffff44;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+  }
+  .card:hover ::before {
+    top: -100%;
+    left: 200%;
+  }
+  
