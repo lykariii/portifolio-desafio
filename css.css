@@ -105,3 +105,7 @@ h2{
     left: 200%;
   }
   
+.listcard{
+    display: flex;
+    justify-content: space-around;
+}
