@@ -135,3 +135,49 @@ h2{
     display: flex;
     justify-content: space-around;
 }
+
+.site-header {
+  position: relative;
+  background-color: #def7ff;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 10px 10px;
+}
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a img {
+  font-size: 25px;
+  font-weight: bold;
+  width: 30px;
+}
+
+.header .link:hover {
+  background-color: #700000;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
